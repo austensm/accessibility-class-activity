@@ -9,6 +9,7 @@ https://chromewebstore.google.com/detail/wave-evaluation-tool/jbbplnpkjmmeebjpij
     - Toggle narrator on to start screen reader
 - For Apple
     - To turn on VoiceOver, press Command-F5
+    - Alternative: Apple menu > System Settings > Accessibility > turn on VoiceOver
 
 ## Steps to get website running
 1. Clone this repo
