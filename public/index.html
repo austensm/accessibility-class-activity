@@ -48,5 +48,27 @@
 
     <!-- Image without alt attribute-->
     <img src="photo.jpeg">
+    <div>
+      <button id="toggleButton" aria-expanded="false" aria-controls="togglePanel">Toggle Description</button>
+      <div id="togglePanel" hidden>
+        <p>This beautiful landscape photo was captured at 1990, by photographer Alice.</p>
+        <p>This content is toggled, but aria-expanded is not updated.</p>
+      </div>
+    </div>
+
+    <script>
+      const toggleButton = document.getElementById('toggleButton');
+      const togglePanel = document.getElementById('togglePanel');
+
+      toggleButton.addEventListener('click', function () {
+        // Toggle the visibility of the panel
+        if (togglePanel.hidden) {
+          togglePanel.hidden = false;
+        } else {
+          togglePanel.hidden = true;
+        }
+        // ERROR: The aria-expanded attribute remains unchanged!
+      });
+    </script>
   </body>
 </html>

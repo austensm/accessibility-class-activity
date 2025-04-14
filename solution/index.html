@@ -43,6 +43,27 @@
       <p class="high-contrast">This is my paragraph text</p>
 
       <img alt="this is a scenic picture of mountains" src="photo.jpeg">
+      <div>
+        <button id="toggleButton" aria-expanded="false" aria-controls="togglePanel">Toggle Description</button>
+        <div id="togglePanel" hidden>
+          <p>This beautiful landscape photo was captured at 1990, by photographer Alice.</p>
+        </div>
+      </div>
     </main>
+    <script>
+        const toggleButton = document.getElementById('toggleButton');
+        const togglePanel = document.getElementById('togglePanel');
+
+        toggleButton.addEventListener('click', function () {
+          // Toggle the visibility of the panel and update aria-expanded accordingly
+          if (togglePanel.hidden) {
+            togglePanel.hidden = false;
+            toggleButton.setAttribute('aria-expanded', 'true');
+          } else {
+            togglePanel.hidden = true;
+            toggleButton.setAttribute('aria-expanded', 'false');
+          }
+        });      
+    </script>
   </body>
 </html>
