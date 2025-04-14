@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Accessible Website</title>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+    nav {
+      background-color: #f0f0f0;
+      padding: 10px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .right-nav a {
+      margin-left: 10px;
+    }
+    #error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <h2>Navigation Bar</h2>
+    <div class="right-nav">
+      <a href="/index.html">Go back home</a>
+    </div>
+  </nav>
+
+  <form id="myForm" onsubmit="handleSubmit(event)">
+    <label for="textInput">Your input:</label><br />
+    <input id="textInput" name="textInput" type="text" /><br /><br />
+    <button type="submit">Submit</button>
+    <p id="error" role="alert" aria-live="assertive"></p>
+  </form>
+
+  <p id="result" aria-live="polite"></p>
+
+  <script>
+    function handleSubmit(event) {
+      event.preventDefault();
+      const input = document.getElementById('textInput').value.trim();
+      const error = document.getElementById('error');
+      const result = document.getElementById('result');
+
+      if (input === '') {
+        error.textContent = 'Input cannot be empty.';
+        result.textContent = '';
+      } else {
+        error.textContent = '';
+        result.textContent = 'You entered: ' + input;
+      }
+    }
+  </script>
+
+</body>
+</html>

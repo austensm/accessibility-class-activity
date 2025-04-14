@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- Missing lang attribute on <html> -->
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inaccessible Website</title>
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+      nav {
+        background-color: #f0f0f0;
+        padding: 10px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .right-nav a {
+        margin-left: 10px;
+      }
+      .high-contrast {
+        color: #222222;
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Missing semantic <nav> and heading structure -->
+    <div class="nav-bar">
+      <div style="font-size: 24px; font-weight: bold;">Navigation Bar</div>
+      <div class="right-nav">
+        <!-- Link has unclear purpose -->
+        <a href="/page1.html">Click here</a>
+      </div>
+    </div>
+
+    <!-- Using <div> for headings -->
+    <div style="font-size: 32px; font-weight: bold;">This is my header</div>
+
+    <!-- Low contrast text -->
+    <div class="low-contrast">This is my paragraph text</div>
+
+    <!-- Image without alt attribute-->
+    <img src="photo.jpeg">
+  </body>
+</html>
