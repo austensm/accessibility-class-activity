@@ -15,15 +15,18 @@ https://chromewebstore.google.com/detail/wave-evaluation-tool/jbbplnpkjmmeebjpij
 2. Run the following code:
     - `npm install`
     - `npm run start`
-4. Go to http://localhost:8080/
+3. Go to http://localhost:8080/
 
 ## Activity
-1. Go to your chrome extensions and click on Wave to activate the report
-    - Look through report and find issues
-2. Try to read site with screen reader & keyboard
-2. Update **index.html** and **page1.html** to fix the accessibility issues
-3. Check the wave report after your fixes to see how you did
-4. Try to read the updated website with your screen reader & keyboard
+1. Explore current website
+    - Go to your chrome extensions and click on Wave to activate the report
+    - Look through Wave report and find issues
+    - Try to navigate site with only screen reader and keyboard
+2. Identify which guidelines are not met
+3. Update **index.html** and **page1.html** to fix the accessibility issues
+4. Explore your updated website
+    - Check the wave report to see how you did
+    - Try to read the updated website with your screen reader & keyboard
 
 
 ## Extra
