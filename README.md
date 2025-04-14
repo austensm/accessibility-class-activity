@@ -29,4 +29,4 @@ https://chromewebstore.google.com/detail/wave-evaluation-tool/jbbplnpkjmmeebjpij
 ## Extra
 - Go to any website of your choosing
     - Activate wave chrome extension to see how accessible the website is rated
-    - Try to navigate the website using screen reader
+    - Try to navigate the website using screen reader & keyboard
