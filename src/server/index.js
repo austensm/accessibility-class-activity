@@ -9,8 +9,8 @@ const __dirname = url.fileURLToPath(new URL(".", import.meta.url));
 const port = process.env.PORT ? process.env.PORT : 8080;
 
 let app = express();
-// app.use(express.static(path.join(__dirname, "../../public")));
-app.use(express.static(path.join(__dirname, "../../solution")));
+app.use(express.static(path.join(__dirname, "../../public")));
+// app.use(express.static(path.join(__dirname, "../../solution")));
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
